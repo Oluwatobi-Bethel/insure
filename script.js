@@ -1,7 +1,11 @@
 
-const hamburgerIcon = document.querySelector('.hamburger_icon');
-const navItems = document.querySelector('.nav_item');
 
-hamburgerIcon.addEventListener('click', () => {
-  navItems.style.display = navItems.style.display === 'block' ? 'none' : 'block';
-});
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger_icon');
+    const navMenu = document.querySelector('.nav_item');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  });
+
